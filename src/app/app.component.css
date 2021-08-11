@@ -1,14 +1,23 @@
 div {
 	text-align: center;
+	color: white;
+	font-family: 'Veneer Two';
+	font-size: 80px
 }
+
+
 nav a {
 	padding: 1rem;
 	text-decoration: none;
 	margin-top: 40px;
+	margin-right: 25px;
 	display: inline-block;
-	background-color: #e8e8e8;
+	background-color: #f6b519;
 	color: #3d3d3d;
 	border-radius: 8px;
+	position: relative;
+	top: 283px;
+	left: 550px;
       }
       
       nav a:hover {
@@ -18,4 +27,3 @@ nav a {
       nav a.active {
 	background-color: black;
       }
-      
