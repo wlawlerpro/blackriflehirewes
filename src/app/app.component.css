@@ -4,6 +4,11 @@ div {
 	font-family: 'Veneer Two';
 	font-size: 80px
 }
+a.title{
+	text-decoration: none;
+	position:relative;
+	top: 210px;
+}
 
 
 nav a {
@@ -16,7 +21,7 @@ nav a {
 	color: #3d3d3d;
 	border-radius: 8px;
 	position: relative;
-	top: 283px;
+	top: 203px;
 	left: 550px;
       }
       
