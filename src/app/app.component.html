@@ -1,11 +1,16 @@
+
 <!--Do not move div tag, the css won't work if its moved ahead of the a tag-->
 <a routerLink="" class="title"><div class="title">Welcome to Black Rifle Hire Wes</div></a>
 
 
-<nav>  
- <a routerLink="/me" >Who is this Guy?</a>
-  <a routerLink="/skill">What can he do?</a>
-</nav>
+<div class="container position-relative">
+  <div class="row ">
+    <div class="col position-absolute top-50 start-50 translate-middle ">
+ <a routerLink="/me" class="menu-button " >Who is this Guy?</a>
+  <a routerLink="/skill" class="menu-button">What can he do?</a>
+   </div>
+  </div>
+</div> 
 
 <router-outlet></router-outlet>
 
