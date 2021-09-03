@@ -1,17 +1,22 @@
 
 <!--Do not move div tag, the css won't work if its moved ahead of the a tag-->
-<a routerLink="" class="title"><div class="title">Welcome to Black Rifle Hire Wes</div></a>
+<a routerLink="" class="title" (click)="mainMenu = true"><div class="title">Welcome to Black Rifle Hire Wes</div></a>
 
 
 <div class="container position-relative">
   <div class="row ">
     <div class="col position-absolute top-50 start-50 translate-middle ">
- <a routerLink="/me" class="menu-button " >Who is this Guy?</a>
-  <a routerLink="/skill" class="menu-button">What can he do?</a>
+      <div *ngIf="mainMenu">
+        <a class=" menu-button" (click)="mainMenu = !mainMenu" routerLink="/me" routerLinkActive="active"> Who is this guy?</a>
+<!-- <a routerLink="/me" class="menu-button " click="menuToggle()">Who is this Guy?</a>
+  <a routerLink="/skill" class="menu-button" click="menuToggle()">What can he do?</a>
+-->
+  </div>
    </div>
   </div>
 </div> 
-
-<router-outlet></router-outlet>
-
+<div>
+<!--<div [@routeAnimation]="prepareRoute(outlet)">-->
+<router-outlet #outlet="outlet"></router-outlet>
+</div>
 
