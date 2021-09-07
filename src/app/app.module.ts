@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MeComponent } from './mefolder/me/me.component';
 import { SkillComponent } from './skillfolder/skill/skill.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SkillComponent } from './skillfolder/skill/skill.component';
   imports: [
     BrowserModule,
    // BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+   NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
