@@ -1,3 +1,9 @@
+.container{
+	position: relative;
+	top: 40px;
+
+}
+
 .title {
 	text-align: center;
 	color: white;
@@ -21,8 +27,8 @@ a.title{
 	color: #3d3d3d;
 	border-radius: 8px;
 	position: relative;
-	top: 203px;
-	left: 550px;
+	top: 260px;
+	left: 500px;
       }
       
 .menu-button a:hover {
