@@ -13,6 +13,9 @@ import { OutletContext, RouterOutlet, Router } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'Welcome to Black Rifle Hire Wes';
   mainMenu = true;
+  name = 'Wes Lawler'; 
+  eaddress= 'wes.lawler2@gmail.com';
+  phone ='502 938 5281'
 
   constructor(private router: Router) {}
 /*

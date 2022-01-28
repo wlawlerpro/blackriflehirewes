@@ -61,9 +61,169 @@ body {
 	padding-top: 55%; /* Keep ratio for 900x500 images */
       }
       
+       /*start*/
+
+
+      
       ngb-carousel .picsum-img-wrapper>img {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 305px;
 	bottom: 0;
-	right: 0;}
+	right: 0;
+      }
+      
+      ngbd-carousel-basic {
+	      position: relative; 
+	      top: 60px;
+      }
+      
+      p {
+	background-color: transparent;
+      } 
+      
+      div.slide-class{
+	color: white;
+	background-color: transparent;
+	position: relative;
+	bottom: 190px; 
+	font-family:'Veneer Two' ;
+	font-size: 35px; 
+      }
+      
+      div.carousel-caption{
+	background-color: transparent;
+      }
+      
+      .carousel-indicators {
+	background-color: transparent;
+      }
+	    
+      /*slide one*/ 
+      p.slide-1{
+	background-color: black;
+	position: relative;
+	top: 200px ;
+	
+      }
+      
+      /*slide two*/ 
+      
+      div.slide-2{
+	position:relative;
+	right:100px
+      }
+      
+      p.slide-2{
+	background-color: black;
+	position: relative;
+	top: 200px ;
+	
+      }
+      /*slide three*/
+      
+      div.slide-3 {
+	position: relative; 
+	left:175px 
+      }
+      p.slide-3{
+	background-color: black;
+	position: relative;
+	top: 200px ;
+	
+	
+      }
+      
+      /*slide four*/ 
+      
+      div.slide-4{
+	position:relative;
+	right:100px
+      }
+      
+      p.slide-4{
+	background-color: black;
+	position: relative;
+	top: 200px ;
+	
+      }
+      
+      /*slide five*/
+      
+      div.slide-5{
+	position:relative;
+	right:90px
+      }
+      
+      p.slide-5{
+	background-color: black;
+	position: relative;
+	top: 200px ;
+	
+      }
+      
+      /*slide six */ 
+      
+      div.slide-6{
+	position:relative; 
+	left: 175px;
+      }
+      p.slide-6{
+	background-color: black;
+	position: relative;
+	top: 200px ;
+	
+      }
+      
+      /*slide seven*/ 
+      
+      
+      /*slide eight*/
+      
+      div.slide-8{
+	position:relative;
+	right:200px
+      }
+      
+      p.slide-8{
+	background-color: black;
+	position: relative;
+	top: 200px ;
+	
+      }
+      
+      /* slide nine */ 
+      
+      p.slide-9{
+	background-color: black;
+	position: relative;
+	top: 200px ;
+	
+      }
+      
+      /*slide ten*/
+      div.slide-10 {
+	position:relative; 
+	right:280px;
+	bottom: 210px
+      }
+      p.slide-10{
+	background-color: black ; 
+	position: relative;
+	top: 140px;
+	left: 500px;
+	height: 100%;
+	width: 50%;
+       /* padding-top: 550px;*/
+       
+      
+      
+      }
+      
+  
+
+	
+	@viewport {
+		width: device-width ;
+		zoom: 1.0 ;
+	      }

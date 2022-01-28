@@ -9,7 +9,11 @@
       <div *ngIf="mainMenu">
         <a class=" menu-button" (click)="mainMenu = !mainMenu" routerLink="/me" routerLinkActive="active"> Who is this guy?</a>
   <a routerLink="/skill" class="menu-button" click="menuToggle()">What can he do?</a>
-
+  <div class='contact'>
+   {{name}} <br>
+   {{eaddress}} <br>
+   {{phone}}
+  </div>
   </div>
    </div>
   </div>

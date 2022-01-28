@@ -1,3 +1,6 @@
+*{
+	background-color: transparent;
+}
 .container{
 	position: relative;
 	top: 40px;
@@ -38,3 +41,13 @@ a.title{
 .menu-button a.active {
 	background-color: black;
       }
+
+      .contact {
+	text-align: center;
+	color: white;
+	font-family: 'Veneer Two';
+	font-size: 20px;
+	background-color: transparent;
+        position: relative; 
+	top: 400px
+}
