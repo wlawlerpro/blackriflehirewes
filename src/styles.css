@@ -111,6 +111,11 @@ body {
 	      font-size: 36px;
 	      color:  #f6b519;
       }
+      .fa-folder-open{
+	padding-left: 22px;
+	font-size: 36px;
+	color:  #f6b519;
+}
 	    
       /*slide one*/ 
       p.slide-1{
