@@ -11,7 +11,7 @@ import { OutletContext, RouterOutlet, Router } from '@angular/router';
 
 
 export class AppComponent implements OnInit {
-  title = 'Welcome to Black Rifle Hire Wes';
+  title = 'Welcome to Black Rifle Hire Wes.com';
   mainMenu = true;
   name = 'Wes Lawler'; 
   eaddress= 'wes.lawler2@gmail.com';

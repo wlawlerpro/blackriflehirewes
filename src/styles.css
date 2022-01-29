@@ -98,6 +98,19 @@ body {
       .carousel-indicators {
 	background-color: transparent;
       }
+
+      .contact {
+	      background-color: transparent;
+      }
+      .fa-github{
+	      font-size: 36px;
+	      color:  #f6b519
+      }
+      .fa-linkedin{
+	      padding-left: 22px;
+	      font-size: 36px;
+	      color:  #f6b519;
+      }
 	    
       /*slide one*/ 
       p.slide-1{
