@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
-import { OutletContext, RouterOutlet, Router } from '@angular/router';
+import { RouterOutlet, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
- // animation: [ ''],
+
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

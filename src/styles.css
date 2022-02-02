@@ -99,8 +99,21 @@ body {
 	background-color: transparent;
       }
 
+     .flex-container {
+	     display:flex ;
+	     justify-content: center;
+	     align-items: center;
+	     position:relative;
+	     top: 200px
+     } 
+     .display-contact{
+	     display: flex;
+	     justify-content: center;
+	     align-items: center;
+     }
       .contact {
 	      background-color: transparent;
+	     
       }
       .fa-github{
 	      font-size: 36px;
@@ -238,10 +251,3 @@ body {
       
       }
       
-  
-
-	
-	@viewport {
-		width: device-width ;
-		zoom: 1.0 ;
-	      }
