@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { SkillComponent } from './skillfolder/skill/skill.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdCarouselBasic} from './slideshow/carousel-basic'
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillComponent, 
-    NgbdCarouselBasic
+    NgbdCarouselBasic,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
