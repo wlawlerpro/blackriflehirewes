@@ -75,7 +75,8 @@ body {
       
       ngbd-carousel-basic {
 	      position: relative; 
-	      top: 60px;
+	      bottom: 25px;
+	      background-color: transparent;
       }
       
       p {
@@ -134,7 +135,7 @@ body {
       p.slide-1{
 	background-color: black;
 	position: relative;
-	top: 200px ;
+	top: 75px ;
 	
       }
       
@@ -148,7 +149,7 @@ body {
       p.slide-2{
 	background-color: black;
 	position: relative;
-	top: 200px ;
+	top: 75px ;
 	
       }
       /*slide three*/
@@ -160,7 +161,7 @@ body {
       p.slide-3{
 	background-color: black;
 	position: relative;
-	top: 200px ;
+	top: 125px ;
 	
 	
       }
@@ -175,7 +176,7 @@ body {
       p.slide-4{
 	background-color: black;
 	position: relative;
-	top: 200px ;
+	top: 150px ;
 	
       }
       
@@ -189,7 +190,7 @@ body {
       p.slide-5{
 	background-color: black;
 	position: relative;
-	top: 200px ;
+	top: 150px ;
 	
       }
       
@@ -202,7 +203,7 @@ body {
       p.slide-6{
 	background-color: black;
 	position: relative;
-	top: 200px ;
+	top: 125px ;
 	
       }
       
@@ -219,7 +220,7 @@ body {
       p.slide-8{
 	background-color: black;
 	position: relative;
-	top: 200px ;
+	top: 150px ;
 	
       }
       
@@ -228,7 +229,7 @@ body {
       p.slide-9{
 	background-color: black;
 	position: relative;
-	top: 200px ;
+	top: 75px ;
 	
       }
       
@@ -241,7 +242,7 @@ body {
       p.slide-10{
 	background-color: black ; 
 	position: relative;
-	top: 140px;
+	top: 132px;
 	left: 500px;
 	height: 100%;
 	width: 50%;

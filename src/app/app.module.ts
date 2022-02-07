@@ -12,11 +12,13 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     SkillComponent, 
-    NgbdCarouselBasic,
+    
+   NgbdCarouselBasic,
     HomeComponent
   ],
   imports: [
     BrowserModule,
+    
    // BrowserAnimationsModule,
     AppRoutingModule,
    NgbModule
