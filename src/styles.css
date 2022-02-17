@@ -130,12 +130,19 @@ body {
 	font-size: 36px;
 	color:  #f6b519;
 }
-	    
+
+      .picsum-img-wrapper{
+	      position: relative;
+	      top: 80px;
+	      background-color: transparent;
+      }
+	  
       /*slide one*/ 
-      p.slide-1{
+      p.slide-1p{
 	background-color: black;
 	position: relative;
-	top: 75px ;
+	top: 75px;
+	font-size: 2vw
 	
       }
       
@@ -146,12 +153,12 @@ body {
 	right:100px
       }
       
-      p.slide-2{
+   /*   p.slide-2{
 	background-color: black;
 	position: relative;
 	top: 75px ;
 	
-      }
+      }*/
       /*slide three*/
       
       div.slide-3 {
