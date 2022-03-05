@@ -63,21 +63,33 @@ body {
       
        /*start*/
 
-
       
+
+      @media only screen and (max-width: 415px) {
+	ngbd-carousel-basic {
+		position: relative;
+		top: 250px;
+		
+		
+	}
+	
+      } 
+      ngbd-carousel-basic {
+	position: relative; 
+	bottom: 25px;
+	background-color: transparent;
+}
+
       ngb-carousel .picsum-img-wrapper>img {
 	position: absolute;
 	top: 0;
 	left: 305px;
 	bottom: 0;
 	right: 0;
+	
       }
       
-      ngbd-carousel-basic {
-	      position: relative; 
-	      bottom: 25px;
-	      background-color: transparent;
-      }
+    
       
       p {
 	background-color: transparent;
@@ -92,14 +104,33 @@ body {
 	font-size: 35px; 
       }
       
-      div.carousel-caption{
+      .carousel-caption{
 	background-color: transparent;
+	align-content: center;
+	position: absolute;
+	top:90%;
       }
-      
+     @media only screen and (max-width:415px){
       .carousel-indicators {
+        position: relative ;
+	top: 550px;
 	background-color: transparent;
+      }     }
+      .carousel-indicators {
+		background-color: transparent;
+	      }
+      @media only screen and (max-width: 415px){
+      .carousel-item {
+	position: relative;
+	top: 70%;
       }
+ }    
+      .carousel-item {
+	     position: relative;
+	     top: 70%;
+	  
 
+      }
      .flex-container {
 	     display:flex ;
 	     justify-content: center;
@@ -140,8 +171,9 @@ body {
       /*slide one*/ 
       p.slide-1p{
 	background-color: black;
-	position: relative;
-	top: 75px;
+	text-align: center;
+	position: absolute;
+	top: 90%;
 	font-size: 2vw
 	
       }
