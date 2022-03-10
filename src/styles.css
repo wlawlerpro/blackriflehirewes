@@ -172,11 +172,17 @@ body {
       @media only screen and (max-width: 415px){
 	div.slide-1 {
 	 position: fixed; 
-	 left: -84%;
+	 left: -75%;
+	 top:15%
 	}
 }
       /*slide two*/ 
-      
+      @media only screen and (max-width: 415px){
+	div.slide-2 {
+	 position: fixed; 
+	 left: -84%;
+	}
+}
       div.slide-2{
 	position:relative;
 	right:100px
@@ -189,11 +195,21 @@ body {
 	
       }*/
       /*slide three*/
-      
+      @media only screen and (max-width: 415px){
+	div.slide-3{
+	 position: fixed; 
+	 left: -84%;
+	}
+}
       div.slide-3 {
 	position: relative; 
 	left:175px 
       }
+      @media only screen and (max-width: 415px){
+	p.slide-3{
+         display: none;
+	}
+}
       p.slide-3{
 	background-color: black;
 	position: relative;
@@ -203,7 +219,12 @@ body {
       }
       
       /*slide four*/ 
-      
+      @media only screen and (max-width: 415px){
+	div.slide-4 {
+	 position: fixed; 
+	 left: -84%;
+	}
+}
       div.slide-4{
 	position:relative;
 	right:100px
