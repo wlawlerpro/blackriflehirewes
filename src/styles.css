@@ -180,7 +180,10 @@ body {
       @media only screen and (max-width: 415px){
 	div.slide-2 {
 	 position: fixed; 
-	 left: -84%;
+	 left:-75%;
+	 top: -25%;
+	 
+	
 	}
 }
       div.slide-2{
@@ -198,7 +201,7 @@ body {
       @media only screen and (max-width: 415px){
 	div.slide-3{
 	 position: fixed; 
-	 left: -84%;
+	 right: 70%;
 	}
 }
       div.slide-3 {
