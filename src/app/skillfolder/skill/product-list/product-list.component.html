@@ -1,0 +1,22 @@
+<button type="button" class="btn btn-default back" aria-label="Left Align">
+	Back
+   </button>
+   <h2>Products</h2>
+   
+   <div *ngFor='let product of products; index as productId'>
+   <h3>
+      <a [title]="product.name + 'details'"
+      [routerLink]="['/products', product.id]">
+	  {{product.name }}
+      </a>
+   </h3>
+   
+   <p *ngIf="product.price"> 
+       Price: {{ product.price | currency}}
+   </p>
+   
+   <button [routerLink]="['/products', product.id]">
+       See Product Details
+   </button>
+   
+   </div>

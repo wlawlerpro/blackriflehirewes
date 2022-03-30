@@ -6,12 +6,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { SkillComponent } from './skill/skill.component';
 import { TopBarComponent } from './skill/top-bar/top-bar.component';
+import { ProductListComponent } from './skill/product-list/product.list.component';
 
 @NgModule({
   imports: [BrowserModule, NgbModule, CommonModule ],
   declarations: [
    SkillComponent,
-    TopBarComponent],
+  TopBarComponent, 
+ProductListComponent],
   exports: [SkillComponent, TopBarComponent],
   bootstrap: [SkillComponent]
 })
