@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product} from './product'
-import { AngularFirestore } from '@angular/fire/firestore';
+//import { AngularFirestore } from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,7 @@ export class CartService {
 
   items : Product[] = [];
 
-  constructor( private http: HttpClient, private db: AngularFirestore) { }
+  constructor( private http: HttpClient, ) { }
   
   getShippingPrices() {
     return this.http.get<{type: string, price: number }[]>('/assets/shipping.json');

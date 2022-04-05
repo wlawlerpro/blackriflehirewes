@@ -1,22 +1,44 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { environment } from 'src/environments/environment';
 
-import { SkillComponent } from './skill/skill.component';
+
 import { TopBarComponent } from './skill/top-bar/top-bar.component';
 import { ProductListComponent } from './skill/product-list/product.list.component';
 import { ProductDetailsComponent } from './skill/product-details/product-details.component';
+import { CartComponent } from './skill/cart/cart.component';
+import { SkillComponent } from './skill/skill.component';
+import { Routes} from '@angular/router';
+
+
+const skillRoutes: Routes = [
+  {path: '', component: ProductListComponent}, 
+  {path: 'products/:productId', component: ProductDetailsComponent},
+  {path: 'cart', component: CartComponent}, 
+]
+
 
 @NgModule({
-  imports: [BrowserModule, NgbModule, CommonModule ],
   declarations: [
-   SkillComponent,
-  TopBarComponent, 
-ProductListComponent,
-ProductDetailsComponent],
-  exports: [SkillComponent, TopBarComponent],
+    SkillComponent,
+    TopBarComponent, 
+    ProductListComponent,
+    ProductDetailsComponent, 
+    CartComponent],
+  imports: [
+    BrowserModule,
+     NgbModule,
+     CommonModule, 
+     HttpClientModule,
+    RouterModule.forChild(skillRoutes ), 
+  ReactiveFormsModule],
+  
+  exports: [SkillComponent, TopBarComponent, FormsModule,],
   bootstrap: [SkillComponent]
 })
 export class skillModule {}

@@ -11,14 +11,14 @@ export class CartComponent{
 
   items = this.cartService.getItems()
   
-  checkoutForm = this.formBuilder.group({
-    name: '',
-    address: ''
+  checkoutForm = this.fb.group({
+    name: [''],
+    address: ['']
   });
 
   constructor(
     private cartService: CartService,
-    private formBuilder: FormBuilder,
+    private fb: FormBuilder,
   ) { }
   
   onSubmit(): void {

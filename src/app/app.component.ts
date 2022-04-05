@@ -12,7 +12,7 @@ import { OutletContext, RouterOutlet, Router } from '@angular/router';
 
 export class AppComponent implements OnInit {
   title = 'Welcome to Black Rifle Hire Wes.com';
-  constructor(private router: Router) {}
+ 
 /*
 prepareRoute(outlet: RouterOutlet) {
   return outlet && OutletContext.activatedRouteData && OutletContext.activatedRouteData['animation'];

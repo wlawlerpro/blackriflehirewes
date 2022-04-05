@@ -5,14 +5,14 @@ import { SkillComponent } from './skillfolder/skill/skill.component'
 import { NgbdCarouselBasic} from './slideshow/carousel-basic'
 
 
-const routes: Routes = [
+const approutes: Routes = [
   {path: '', component: HomeComponent, pathMatch: 'full'},
   {path: 'me', component: NgbdCarouselBasic},
   {path: 'skill', component:SkillComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(approutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

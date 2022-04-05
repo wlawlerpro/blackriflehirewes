@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdCarouselBasic} from './slideshow/carousel-basic'
 import { HomeComponent } from './home/home.component';
-import { SkillComponent } from './skillfolder/skill/skill.component';
 import { skillModule } from './skillfolder/skill.module';
+import { Router } from '@angular/router';
 
 
 @NgModule({
@@ -24,9 +24,12 @@ import { skillModule } from './skillfolder/skill.module';
     skillModule,
    // BrowserAnimationsModule,
     AppRoutingModule,
-   NgbModule
+   NgbModule, 
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private router: Router) {}
+ }
