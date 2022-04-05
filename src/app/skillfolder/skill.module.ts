@@ -17,7 +17,7 @@ import { Routes} from '@angular/router';
 
 
 const skillRoutes: Routes = [
-  {path: '', component: ProductListComponent}, 
+  {path: 'skill', component: ProductListComponent}, 
   {path: 'products/:productId', component: ProductDetailsComponent},
   {path: 'cart', component: CartComponent}, 
 ]
