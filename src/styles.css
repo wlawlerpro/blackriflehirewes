@@ -311,6 +311,110 @@ body {
       }
       
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Skill Side CSS>>>>>>>>>>>>>>>>>>*/
+.product-list {
+	font-family: 'Veneer Two';
+	      src: url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff2') format('woff2'),
+		  url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff') format('woff');
+	      font-weight: normal;
+	      font-style: normal;
+	      font-display: swap;
+	  color: white;
+	  box-sizing: border-box;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+
+	}
+	
+
+
+  /* Text */
+  
+  h1 {
+	font-size: 32px;
+      }
+      
+      h2 {
+	font-size: 20px;
+	color: #ffffff
+      }
+      
+      h1, h2 {
+	font-weight: lighter;
+      }
+      
+      p {
+	font-size: 14px;
+	color: #d2d4d6
+      }
+      
+      /* Hyperlink */
+      
+      a {
+	cursor: pointer;
+	color: #ffffff;
+	text-decoration: none;
+      }
+      
+      a:hover {
+	opacity: 0.8;
+      }
+
+/* Input */
+  
+input {
+	font-size: 14px;
+	border-radius: 2px;
+	padding: 8px;
+	margin-bottom: 16px;
+	border: 1px solid #BDBDBD;
+      }
+      
+      label {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	display: block;
+	text-transform: uppercase;
+      }
+   /* Button */
+   .button, button {
+	display: inline-flex;
+	align-items: center;
+	padding: 8px 16px;
+	border-radius: 2px;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: #f6b519;
+	color: black;
+	border: none;
+      }
+      /* Back Button */
+      .back {
+	position: fixed
+	top 30px 
+      }
+      .button:hover, button:hover {
+	opacity: 0.8;
+	font-weight: normal;
+      }
+      
+      .button:disabled, button:disabled {
+	opacity: 0.5;
+	cursor: auto;
+      }
+      
+  /* Fancy Button */
+  
+  .fancy-button {
+	background-color: #f6b519;
+	color: #ffffff;
+      }
+      
+      .fancy-button i.material-icons {
+	color: #1976d2;
+	padding-right: 4px;
+      }
+      
 /*Top Bar*/
 app-top-bar {
 	width: 100%;
@@ -331,4 +435,18 @@ app-top-bar {
 		url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff') format('woff');
 	 background-color: black;
       }
-    
+   /* Checkout Cart, Shipping Prices */
+  
+  .cart-item, .shipping-item {
+	width: 100%;
+	min-width: 400px;
+	max-width: 450px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 16px 32px;
+	margin-bottom: 8px;
+	border-radius: 2px;
+	background-color: #EEEEEE;
+      }
+       

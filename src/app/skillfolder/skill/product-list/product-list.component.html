@@ -2,9 +2,9 @@
 	Back
     </a>
    </button>
-   <h2>Products</h2>
+   <h2 class="product-list">Products</h2>
    
-   <div *ngFor='let product of products; index as productId'>
+   <div class="product-list" *ngFor='let product of products; index as productId'>
    <h3>
       <a [title]="product.name + 'details'"
       [routerLink]="['/products', product.id]">
