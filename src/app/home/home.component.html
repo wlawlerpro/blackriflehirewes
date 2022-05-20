@@ -6,7 +6,7 @@
 	<div class="flex-container">
 		<!--  <div *ngIf="mainMenu">-->
 		    <a class=" menu-button btn-lg"  [routerLink]="['/me']" routerLinkActive="active"> Who is this guy?</a>
-	      <a [routerLink]="['/skill']" class="menu-button btn-lg" >What can he do?</a>
+	      <a [routerLink]="['/skill']" class="menu-button btn-lg" (click)="gotoggleBanner()" >What can he do?</a>
 		  </div>
 		  <div class="display-contact">
 	      <div class='contact'>

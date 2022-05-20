@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 //import { ActivatedRouteData } from '@angular/router';
 import { OutletContext, RouterOutlet, Router } from '@angular/router';
+import { CommonServiceService } from './common-service.service';
+
 
 @Component({
   selector: 'app-root',
@@ -13,19 +15,26 @@ import { OutletContext, RouterOutlet, Router } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'Welcome to Black Rifle Hire Wes.com';
  
+
+
+  
+ 
 /*
 prepareRoute(outlet: RouterOutlet) {
   return outlet && OutletContext.activatedRouteData && OutletContext.activatedRouteData['animation'];
 
 }
 */
-ngOnInit () {
+constructor(public router: Router, private   CommonServiceService : CommonServiceService) {
 
 }
-/*
-menuToggle() {
-  this.mainMenu = !this.mainMenu;
-  this.router.navigate(['./me']);
+goToggle()  { this.CommonServiceService.goToggleBanner}
+ngOnInit () {
+  
+
 }
-*/
+
+
+
+
 }

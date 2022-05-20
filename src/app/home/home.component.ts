@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonServiceService } from '../common-service.service';
 
 @Component({
   selector: 'app-home',
@@ -10,11 +11,18 @@ export class HomeComponent implements OnInit {
 	mainMenu = true;
 	name = 'Wes Lawler'; 
 	address= 'wes.lawler2@gmail.com';
-	phone ='502 938 5281'
-      
-  constructor() { }
+	phone ='502 938 5281' 
+  
+ 
 
-  ngOnInit(): void {
+ 
+      
+  constructor( private CommonServiceService: CommonServiceService ) { }
+
+  gotoggleBanner()         { this.CommonServiceService.goToggleBanner();}
+
+  ngOnInit() {
+  
   }
 
 }

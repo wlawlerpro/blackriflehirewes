@@ -3,6 +3,7 @@
 
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
+  <img src={{product.productImage}}>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
 <button 

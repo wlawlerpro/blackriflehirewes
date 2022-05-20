@@ -24,7 +24,8 @@ import { Router } from '@angular/router';
     skillModule,
    // BrowserAnimationsModule,
     AppRoutingModule,
-   NgbModule, 
+   NgbModule,
+  
 
   ],
   providers: [],
