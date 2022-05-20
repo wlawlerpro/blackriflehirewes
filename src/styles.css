@@ -435,6 +435,9 @@ app-top-bar {
 		url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff') format('woff');
 	 background-color: black;
       }
+      h1.storenav{
+	      font-size: 4vw;
+      }
    /* Checkout Cart, Shipping Prices */
   
   .cart-item, .shipping-item {
