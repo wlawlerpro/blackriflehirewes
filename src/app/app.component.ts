@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //import { ActivatedRouteData } from '@angular/router';
 import { OutletContext, RouterOutlet, Router } from '@angular/router';
-import { CommonServiceService } from './common-service.service';
-
-
 @Component({
   selector: 'app-root',
  //animation: [ ''],
@@ -25,10 +22,10 @@ prepareRoute(outlet: RouterOutlet) {
 
 }
 */
-constructor(public router: Router, private   CommonServiceService : CommonServiceService) {
+constructor(public router: Router ) {
 
 }
-goToggle()  { this.CommonServiceService.goToggleBanner}
+
 ngOnInit () {
   
 

@@ -3,10 +3,11 @@
   <!--<div class="row ">-->
    <!-- <div class="col">-->
       <!--<div class="col position-absolute top-50 start-50 translate-middle ">-->
+	<div class="title"   >{{title}} </div>
 	<div class="flex-container">
 		<!--  <div *ngIf="mainMenu">-->
 		    <a class=" menu-button btn-lg"  [routerLink]="['/me']" routerLinkActive="active"> Who is this guy?</a>
-	      <a [routerLink]="['/skill']" class="menu-button btn-lg" (click)="gotoggleBanner()" >What can he do?</a>
+	      <a [routerLink]="['/skill']" class="menu-button btn-lg" >What can he do?</a>
 		  </div>
 		  <div class="display-contact">
 	      <div class='contact'>
