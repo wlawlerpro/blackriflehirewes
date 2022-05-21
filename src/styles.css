@@ -322,6 +322,9 @@ body {
 	  box-sizing: border-box;
 	  -webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
+	position: relative;
+	top:6px;
+	left:12px;
 
 	}
 	
