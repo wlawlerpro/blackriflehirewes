@@ -328,7 +328,13 @@ body {
 	padding: 6px
 
 	}
-	
+h2.product-list{
+	font-size: 6.5vw;
+	text-decoration: underline;
+}
+p.price{
+	font-size: 16px;
+}
 
 
   /* Text */
@@ -362,6 +368,25 @@ body {
       a:hover {
 	opacity: 0.8;
       }
+
+/*Product Details */
+h2.details-title{ 
+	font-family: 'Veneer Two';
+	src: url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff2') format('woff2'),
+	    url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff') format('woff');
+	position: relative; 
+	left: 15px;
+	color: #f6b519
+}
+h3.details-product-name {
+	font-family: 'Veneer Two';
+	src: url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff2') format('woff2'),
+	    url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff') format('woff');
+	color:#ffffff;
+	position: relative; 
+	left: 10px;
+
+}
 
 /* Input */
   
@@ -411,10 +436,19 @@ input {
  /*back button*/
  .previous {
 	 background-color: #f6b519;
+	 color: black;
 	 padding: 5px;
 	 position: relative;
 	 left: 10px
  }
+  /* Fancy Button */
+  
+  .fancy-button {
+	background-color: #f6b519;
+	color: #ffffff;
+      }
+      
+    
 /*Top Bar*/
 app-top-bar {
 	width: 100%;

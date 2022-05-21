@@ -1,11 +1,11 @@
 <app-top-bar></app-top-bar>
-<h2>Product Details</h2>
+<h2 class="details-title">Product Details</h2>
 
 <div *ngIf="product">
-  <h3>{{ product.name }}</h3>
+  <h3 class="details-product-name">{{ product.name }}</h3>
   <img src={{product.productImage}}>
-  <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
+  <h4>{{ product.price | currency }}</h4>
 <button 
 (click)="addToCart(product)">Buy</button>
 </div>
