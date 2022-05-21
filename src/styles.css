@@ -407,18 +407,14 @@ input {
 	cursor: auto;
       }
       
-  /* Fancy Button */
-  
-  .fancy-button {
-	background-color: #f6b519;
-	color: #ffffff;
-      }
-      
-      .fancy-button i.material-icons {
-	color: #1976d2;
-	padding-right: 4px;
-      }
-      
+
+ /*back button*/
+ .previous {
+	 background-color: #f6b519;
+	 padding: 5px;
+	 position: relative;
+	 left: 10px
+ }
 /*Top Bar*/
 app-top-bar {
 	width: 100%;
