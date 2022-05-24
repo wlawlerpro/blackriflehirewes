@@ -21,7 +21,7 @@ export interface Product {
 	    price: 50000,
 	    productImage: 'https://lh3.googleusercontent.com/VeBYEhiz-tl5Ui5d--XKscCtsCHRt9jwOZTj0QuSvqeXU9OxJChwuf0oLLkCVhS0np9QRlTSBT3GrjHcSPXodLxeSmdFrSckVnzDlMI3lFGQiosMaAl4vs-Pqym-cxzSCFAnPREXnQ=w2400',  
 	    preview: 'Buy Now before he gets fat again',
-	    description: 'Before he gets fat again'
+	    description: 'Are you NOT a fat phobic son of a bitch? Do you believe that there is more to life than being able  to look down and see your own dick? Then JTs is fat clothes is something that you need for your wardrobe. What once was donned by the Chris Farley-esque body that used to belong to Black Rifle Coffees Jarred Taylor, can now be yours for the low low price of $19.95Are you NOT a fat phobic son of a bitch? Do you believe that there is more to life than be able to look down and see your dick? ',
 	}, 
 	{   id:3,
 	    name: "Starship Troopers: The Logan Stark Reboot", 

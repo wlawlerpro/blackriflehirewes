@@ -1,10 +1,12 @@
 <app-top-bar></app-top-bar>
 <h2 class="details-title">Product Details</h2>
-
+<a [routerLink]="['/skill']" class="previous ">
+  &#8249;
+  </a>
 <div *ngIf="product">
   <h3 class="details-product-name">{{ product.name }}</h3>
   <img src={{product.productImage}}>
-  <p>{{ product.description }}</p>
+  <p class="product-description">{{ product.description }}</p>
   <h4>{{ product.price | currency }}</h4>
 <button 
 (click)="addToCart(product)">Buy</button>

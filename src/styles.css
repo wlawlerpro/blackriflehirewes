@@ -388,6 +388,16 @@ h3.details-product-name {
 
 }
 
+/*Product-Description*/
+p.product-description {
+	font-family: 'Veneer Two';
+	src: url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff2') format('woff2'),
+	    url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff') format('woff');
+	color:#ffffff;
+	padding-right: 40px;
+	padding-left: 10px;
+}
+
 /* Input */
   
 input {
