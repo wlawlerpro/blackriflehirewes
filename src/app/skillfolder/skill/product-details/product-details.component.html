@@ -10,5 +10,5 @@
   <p class="product-description">{{ product.description }}</p>
   <h4 class="item-price">{{ product.price | currency }}</h4>
 <button (click)="addToCart(product)" class="add-to-cart">Add to Cart</button>
-<button (click)="buy(product)" class="buy-it-now"> Buy </button>
+<button (click)=onBuy() class="buy-it-now"> Buy </button>
 </div>
