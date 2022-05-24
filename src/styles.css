@@ -407,8 +407,21 @@ p.product-description {
 	margin-left:20px;
 	
 }
+h4.item-price {
+	color:#ffffff;
+	margin-left:19px; 
+	margin-bottom: 20px
+}
+button.add-to-cart{
+	margin-left: 20px;
+	margin-bottom: 75px;
+}
 
+button.buy-it-now{
+	margin-left: 10px;
+	margin-bottom:75px;
 
+}
 /* Input */
   
 input {
