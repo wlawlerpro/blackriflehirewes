@@ -520,4 +520,13 @@ app-top-bar {
 	border-radius: 2px;
 	background-color: #EEEEEE;
       }
-       
+   .cart-header{
+	font-family: 'Veneer Two';
+	src: url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff2') format('woff2'),
+	    url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff') format('woff');
+	text-decoration: underline;
+	color:#f6b519;	
+	margin-top: 20px;
+	margin-left:12px;
+	  
+   } 

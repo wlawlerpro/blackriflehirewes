@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product} from './product'
+import { BehaviorSubject } from 'rxjs';
 //import { AngularFirestore } from '@angular/fire/firestore';
 
 @Injectable({
@@ -8,28 +9,52 @@ import { Product} from './product'
 })
 export class CartService {
 
+private total = 0; 
+private totalSubject$ = new BehaviorSubject<number>(this.total); 
+public totalOberservable = this.totalSubject$.asObservable(); 
+private  items : Product[] = []; 
 
-  items : Product[] = [];
+private itemList$ = new BehaviorSubject<Product[]>(this.items); 
+public itermsObservable = this.itemList$.asObservable();
+
+  
 
   constructor( private http: HttpClient, ) { }
   
-  getShippingPrices() {
-    return this.http.get<{type: string, price: number }[]>('/assets/shipping.json');
-  }
+  
 
-  addToCart(product: Product) {
-    this.items.push(product); 
+  addToCart(item: Product) {
+    this.items.push(item);
+    this.itemList$.next(this.items); 
+    this.total = this.calculateTotal(); 
+    this.totalSubject$.next(this.total)
+    
   }
+  
+  removeFromCart(index: number){
+    this.items.splice(index,1)
+    this.total = this.calculateTotal(); 
+    this.totalSubject$.next(this.total)
 
+  }
   getItems() {
-    return this.items; 
+    return this.itemList$.asObservable(); 
   }
 
   clearCart() {
     this.items = []; 
     return this.items;
   }
+  
 
-
+  private calculateTotal(): number {
+    let total = 0; 
+    this.items.forEach(
+      (item: { price: number}) =>
+      (total += item.price * 1)
+    ); 
+    return total; 
+  }
+  
  
 }

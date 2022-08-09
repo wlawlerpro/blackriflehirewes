@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
 import { CartService } from '../../cart.service';
+import { Product } from '../../product';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-cart',
@@ -8,24 +9,33 @@ import { CartService } from '../../cart.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent{
-
-  items = this.cartService.getItems()
+  total : number; 
+  items : Product[] = [];
   
-  checkoutForm = this.fb.group({
-    name: [''],
-    address: ['']
-  });
+  cartForm = this.fb.group({
+    cartStock: this.fb.array([])
+    })
+    
 
   constructor(
     private cartService: CartService,
-    private fb: FormBuilder,
+    private fb: FormBuilder, 
+    
   ) { }
   
+  ngOnItit(): void{
+    this.cartService.itermsObservable.subscribe((res) => {
+      this.items = res;
+    }); 
+    this.cartService.totalOberservable.subscribe((res) => {
+      this.total = res; 
+    }); 
+  }
   onSubmit(): void {
     // Process checkout data here
     this.items = this.cartService.clearCart();
     window.alert('Thank you for viewing my Demo');
-    this.checkoutForm.reset();
+   
   }
 }
   
