@@ -507,8 +507,10 @@ app-top-bar {
 	      font-size: 5vw;
       }
    /* Checkout Cart, Shipping Prices */
+
+   
   
-  .cart-item, .shipping-item {
+  .cart-item{
 	width: 100%;
 	min-width: 400px;
 	max-width: 450px;
@@ -518,7 +520,11 @@ app-top-bar {
 	padding: 16px 32px;
 	margin-bottom: 8px;
 	border-radius: 2px;
-	background-color: #EEEEEE;
+	background-color: transparent;
+	color: #f6b519;
+	display: flex; 
+	align-items: center; 
+	font-size: 1.5vw;	
       }
    .cart-header{
 	font-family: 'Veneer Two';
@@ -530,3 +536,4 @@ app-top-bar {
 	margin-left:12px;
 	  
    } 
+   

@@ -14,6 +14,7 @@ import { ProductDetailsComponent } from './skill/product-details/product-details
 import { CartComponent } from './skill/cart/cart.component';
 import { SkillComponent } from './skill/skill.component';
 import { Routes} from '@angular/router';
+import { CartService } from './cart.service';
 
 
 const skillRoutes: Routes = [
@@ -25,6 +26,10 @@ const skillRoutes: Routes = [
 
 
 @NgModule({
+  providers:[
+    CartService
+  ],
+  
   declarations: [
     SkillComponent,
     TopBarComponent, 

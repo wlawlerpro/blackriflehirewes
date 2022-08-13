@@ -33,9 +33,13 @@ export class CartComponent{
   }
   onSubmit(): void {
     // Process checkout data here
-    this.items = this.cartService.clearCart();
+     this.cartService.clearCart();
     window.alert('Thank you for viewing my Demo');
    
+  }
+
+  onRemove(index:number){
+    this.cartService.removeFromCart(index); 
   }
 }
   

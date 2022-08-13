@@ -27,7 +27,8 @@ public itermsObservable = this.itemList$.asObservable();
     this.items.push(item);
     this.itemList$.next(this.items); 
     this.total = this.calculateTotal(); 
-    this.totalSubject$.next(this.total)
+    this.totalSubject$.next(this.total); 
+    
     
   }
   
