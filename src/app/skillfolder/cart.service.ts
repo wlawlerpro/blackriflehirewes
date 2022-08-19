@@ -19,11 +19,10 @@ public itermsObservable = this.itemList$.asObservable();
 
   
 
-  constructor( private http: HttpClient, ) { }
   
   
 
-  addToCart(item: Product) {
+  addToCart(item: Product): void {
     this.items.push(item);
     this.itemList$.next(this.items); 
     this.total = this.calculateTotal(); 

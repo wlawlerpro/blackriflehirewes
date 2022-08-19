@@ -1,29 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../cart.service';
-import { Product } from '../../product';
-import { FormBuilder } from '@angular/forms';
+import { Product, products } from '../../product';
+
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent{
+export class CartComponent implements OnInit{
   total : number; 
   items : Product[] = [];
   
-  cartForm = this.fb.group({
-    cartStock: this.fb.array([])
-    })
+ 
     
 
   constructor(
     private cartService: CartService,
-    private fb: FormBuilder, 
+
     
   ) { }
+ 
   
-  ngOnItit(): void{
+  ngOnInit(): void{
     this.cartService.itermsObservable.subscribe((res) => {
       this.items = res;
     }); 
