@@ -55,14 +55,18 @@ button {
 	color: #f6b519 
     }
     td.remove{
-	text-align: center;
+	position: relative;
+	right: 15px;
     }
     td.input{
 	text-align: center;
 	padding-top:10px;
     }
     td.price{
-	text-align: center;
+	text-align: left;
+	color: white;
+	position:relative; 
+	right: 5px; 
 
     }
     td.total{
@@ -80,6 +84,6 @@ button {
     .tc1{
 	color: white; 
     }
-
+   
 
   
