@@ -101,17 +101,22 @@
 	}
 	.bottom{
 		position: relative;
-		right: 75px;
+		right: 185px;
 	}
 	button {
-		font-size: 2vw;
-		
+		font-size: 4vw	;
 	
+	
+	}
+	button.shop{
+		white-space: nowrap;
+		
 	}
     }
     @media only screen and (min-width: 391px){
 	.mobileContainer {
 		display: none 
+		
 	}
     }
 
