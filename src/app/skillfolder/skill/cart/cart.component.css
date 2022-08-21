@@ -10,12 +10,7 @@
 
 
 
-button {
-	flex: 0 0 100px; 
-	margin-left: 30 px;
-	
 
-}
 
     
 
@@ -51,8 +46,13 @@ button {
 	
 
     }
+
     tr th {
 	color: #f6b519 
+    }
+    td.remove{
+	position: relative;
+	right: 15px;
     }
     td.remove{
 	position: relative;
@@ -66,7 +66,7 @@ button {
 	text-align: left;
 	color: white;
 	position:relative; 
-	right: 5px; 
+	right: 6px; 
 
     }
     td.total{
@@ -84,6 +84,38 @@ button {
     .tc1{
 	color: white; 
     }
+
+  
+    
+  /*Mobile Settings */
+    @media only screen and (max-width: 390px){
+	.container{
+		display:none
+	}
+	tr.th{
+		width: 80%;
+
+	}
+	.tc1{
+		font-size: 5vw;
+	}
+	.bottom{
+		position: relative;
+		right: 75px;
+	}
+	button {
+		font-size: 2vw;
+		
+	
+	}
+    }
+    @media only screen and (min-width: 391px){
+	.mobileContainer {
+		display: none 
+	}
+    }
+
+  
    
 
   
