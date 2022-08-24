@@ -54,7 +54,7 @@
         <td  class="remove tc1"> <button type="button remove" (click)="onRemove(i)">X</button> </td>
        </tr> 
        <tr class="third-row">
-        <td><button [routerLink]="['/']" class=" bottom shop ">Shop More</button></td>
+        <td><button [routerLink]="['/skill']" class=" bottom shop ">Shop More</button></td>
         <td><button type="button" class="bottom pl-6" (click)="onSubmit()">Checkout</button></td>
       
         <td  class="total" ><strong>Total: {{this.total | currency: "USD":true}}</strong></td>
@@ -66,40 +66,3 @@
  </div> 
 </div>
 
-<!--
-  
-  <div class="container">
-    <div class="cart-table">
-      <div class="products-n-cart">
-     <table class="table table-responsive-sm">
-    <table>
-        <thead> 
-         <tr class="header-row"> 
-          <th>Name</th> 
-          <th>Price</th> 
-          <th>Action</th> 
-         </tr>
-        </thead>
-        <tbody> 
-         <tr *ngFor="let item of items; let i = index">
-        <td style="width:30%" class="tc1">{{item.name}}</td>
-          <td style="width: 20%" class="price"> {{item.price | currency: "USD": true}}</td> 
-          <td style="width: 20%" class="remove tc1"> <button type="button remove" (click)="onRemove(i)"> Remove </button> </td>
-         </tr> 
-         <tr class="third-row">
-         <td>
-            <button [routerLink]="['/']" class="btn btn-primary bottom ">Shop More</button>
-            <button type="button" class="bottom pl-6" (click)="onSubmit()">Checkout</button>
-         </td>
-          
-          <td><button [routerLink]="['/']" class="btn btn-primary bottom ">Shop More</button></td>
-          <td><button type="button" class="bottom pl-6" (click)="onSubmit()">Checkout</button></td>
-        
-          <td  class="total" ><strong>Total: {{this.total | currency: "USD":true}}</strong></td>
-          </tr>
-       </tbody> 
-     </table>
-    </div>
-   </div> 
-  </div>
--->

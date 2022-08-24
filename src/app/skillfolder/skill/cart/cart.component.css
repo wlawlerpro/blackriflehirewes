@@ -97,20 +97,24 @@
 
 	}
 	.tc1{
-		font-size: 5vw;
+		font-size: 4vw;
 	}
 	.bottom{
 		position: relative;
-		right: 185px;
+		right: 205px;
 	}
 	button {
-		font-size: 4vw	;
+		font-size: 2vw	;
 	
 	
 	}
 	button.shop{
 		white-space: nowrap;
 		
+	}
+	.total{
+		position:relative;
+		right: 145px;
 	}
     }
     @media only screen and (min-width: 391px){
