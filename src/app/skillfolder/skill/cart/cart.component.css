@@ -116,15 +116,37 @@
 		position:relative;
 		right: 145px;
 	}
+	.noItem{
+		align-content:center; 
+		padding-top: 50%;
+	}
     }
     @media only screen and (min-width: 391px){
 	.mobileContainer {
 		display: none 
 		
 	}
-    }
-
-  
    
+    }
+    /*empty cart */
+    .noItem{
+	background-color: black;
+	color: #f6b519;
+	padding-top: 15%;
+    }
+   .center{
+	text-align: center;
+	font-family:'Veneer Two' ;
+   }
+    .card{
+	background-color: transparent;
 
+    }
+    .center button{
+	font-family: 'Veneer Two';
+	font-size: 14px !important;
+	margin-top: 20px !important;
+	font-weight: 400;
+	padding: 12px 72px;
+    }
   
