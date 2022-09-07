@@ -286,13 +286,23 @@ body {
       
       /* slide nine */ 
       
-      p.slide-9{
+      .slide-9{
 	background-color: black;
 	position: relative;
 	top: 75px ;
 	
       }
-      
+    @media only screen and (min-width: 401px){
+      .slide-9{
+	position: relative;
+	top: -535px ;
+	
+	
+      }
+      .slide-9 p {
+	font-size: 3vw;
+      }
+}
       /*slide ten*/
       div.slide-10 {
 	position:relative; 
@@ -309,6 +319,23 @@ body {
        /* padding-top: 550px;*/
         
       }
+      /*slide eleven*/
+      @media only screen and (max-width: 391px){
+	.slide-11 {
+	 position: relative; 
+	 align-content: center;
+	 font-size: 4vw;
+	 right: 40%;
+	 top:60%;}
+	}
+      .slide-11 p{
+	font-size: 3vw;
+	align-content: center;
+	position: fixed;
+	bottom:5%
+
+      }
+      
       
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Skill Side CSS>>>>>>>>>>>>>>>>>>*/
 .product-list {
