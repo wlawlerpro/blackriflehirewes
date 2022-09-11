@@ -101,7 +101,7 @@ body {
 	position: relative;
 	bottom: 190px; 
 	font-family:'Veneer Two' ;
-	font-size: 35px; 
+ 
       }
       
       .carousel-caption{
@@ -115,7 +115,11 @@ body {
         position: relative ;
 	top: 100px;
 	background-color: transparent;
-      }     }
+      }    
+       .carousel-caption{
+	max-height: max-content;
+       }
+}
       .carousel-indicators {
 		background-color: transparent;
 	      }
@@ -172,24 +176,27 @@ body {
       @media only screen and (max-width: 415px){
 	div.slide-1 {
 	 position: fixed; 
-	 left: -75%;
+	 left: -80%;
 	 top:15%
 	}
+
+	
 }
       /*slide two*/ 
       @media only screen and (max-width: 415px){
 	div.slide-2 {
 	 position: fixed; 
-	 left:-75%;
-	 top: -25%;
+	 left:-65%;
+	 top: 15%;
 	 
 	
 	}
 }
-      div.slide-2{
+      @media only screen and (min-width: 416px){ div.slide-2{
 	position:relative;
 	right:100px
       }
+}
       
    /*   p.slide-2{
 	background-color: black;
@@ -200,34 +207,39 @@ body {
       /*slide three*/
       @media only screen and (max-width: 415px){
 	div.slide-3{
-	 position: fixed; 
-	 right: 70%;
+		position: fixed; 
+		left:-65%;
+		top: 15%;}
+
+	 p.slide-3{
+		display: none;}
 	}
-}
-      div.slide-3 {
+
+   @media only screen and (min-width:416px){   
+	  div.slide-3 {
 	position: relative; 
 	left:175px 
       }
-      @media only screen and (max-width: 415px){
-	p.slide-3{
-         display: none;
-	}
-}
+
+    
       p.slide-3{
 	background-color: black;
 	position: relative;
 	top: 125px ;
 	
-	
       }
+}
+      
       
       /*slide four*/ 
       @media only screen and (max-width: 415px){
 	div.slide-4 {
-	 position: fixed; 
-	 left: -84%;
+		position: fixed; 
+		left:-65%;
+		top: 15%;
 	}
 }
+@media only screen and (min-width: 416px){
       div.slide-4{
 	position:relative;
 	right:100px
@@ -239,7 +251,7 @@ body {
 	top: 150px ;
 	
       }
-      
+}
       /*slide five*/
       
       div.slide-5{
@@ -269,13 +281,21 @@ body {
       
       /*slide seven*/ 
       @media only screen and (max-width: 391px){
-	.slide-7 {
-	 position: relative; 
+	div.slide-7 p {
+	 font-size: 20px;
+	 width:100%;
+	 max-width: 388px;
+	 word-wrap: break-word;
+	 text-align: center;
+	 position: fixed; 
+	 top:25%;
+	 max-height:400px ;
 	 align-content: center;
-	 font-size: 4vw;
-	 right: 40%;
-	 top:60%;}
+	 justify-content: center;
+	}
+
       }
+      @media only screen and (min-width: 392px){
       .slide-7 p{
 	
 	font-size: 3vw;
@@ -289,6 +309,7 @@ body {
 	
 
       }
+}
 
       /*slide eight*/
       
@@ -400,7 +421,7 @@ p.price{
       }
       
       p {
-	font-size: 14px;
+	
 	color: #d2d4d6
       }
       
@@ -515,6 +536,17 @@ input {
       
 
  /*back button*/
+ @media only screen and (max-width: 391px){
+ .previous {
+	background-color: #f6b519;
+	color: black;
+	padding: 5px;
+	position: fixed;
+	top: 10% !important;
+	left: 10px
+}
+ }
+ @media only screen and (min-width: 392){
  .previous {
 	 background-color: #f6b519;
 	 color: black;
@@ -522,6 +554,7 @@ input {
 	 position: relative;
 	 left: 10px
  }
+}
   /* Fancy Button */
   
   .fancy-button {
