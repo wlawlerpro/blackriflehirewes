@@ -110,19 +110,20 @@ body {
 	position: absolute;
 	top:90%;
       }
-     @media only screen and (max-width:415px){
+     @media only screen and (max-width:391px){
       .carousel-indicators {
-        position: relative ;
-	top: 100px;
+        position:absolute ;
+	bottom: -500px;
 	background-color: transparent;
+	
       }    
-       .carousel-caption{
-	max-height: max-content;
-       }
+   
 }
+      @media only screen and (min-width:392px){
       .carousel-indicators {
 		background-color: transparent;
 	      }
+	}
       @media only screen and (max-width: 415px){
       .carousel-item {
 	position: relative;
@@ -326,23 +327,35 @@ body {
       }
       
       /* slide nine */ 
-      
-      .slide-9{
-	background-color: black;
-	position: relative;
-	top: 75px ;
-	
-      }
-    @media only screen and (min-width: 401px){
-      .slide-9{
-	position: relative;
-	top: -535px ;
-	
-	
-      }
-      .slide-9 p {
+      @media only screen and (max-width: 391px){
+	div.slide-9 p {
+	 font-size: 20px;
+	 width:100%;
+	 max-width: 388px;
+	 word-wrap: break-word;
+	 text-align: center;
+	 position: fixed; 
+	 top:25%;
+	 max-height:400px ;
+	 align-content: center;
+	 justify-content: center;
+	}
+
+      } 
+  
+    @media only screen and (min-width: 392px){
+      div.slide-9 p{
 	font-size: 3vw;
+	align-content: center;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	bottom:20%;
+	right:1%;
+	padding: 0px 20px 0px 20px; 
+	
       }
+     
 }
       /*slide ten*/
       div.slide-10 {
