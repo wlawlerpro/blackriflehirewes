@@ -180,6 +180,12 @@ body {
 	 left: -80%;
 	 top:15%
 	}
+}
+@media only screen and (min-width: 416px){
+	div.slide-1 {
+	 position: relative;
+	 left: 15%;
+	}
 
 	
 }
@@ -195,7 +201,7 @@ body {
 }
       @media only screen and (min-width: 416px){ div.slide-2{
 	position:relative;
-	right:100px
+	left: 15%;
       }
 }
       
@@ -576,8 +582,8 @@ input {
 	 background-color: #f6b519;
 	 color: black;
 	 padding: 5px;
-	 position: relative;
-	 left: 10px
+	 position: relatiive; 
+	 left: 10%
  }
 }
   /* Fancy Button */
