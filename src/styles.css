@@ -328,20 +328,41 @@ body {
 }
 
       /*slide eight*/
-      
-      div.slide-8{
-	position:relative;
-	right:200px
-      }
-      
-      p.slide-8{
-	background-color: black;
-	position: relative;
-	top: 150px ;
+      @media only screen and (max-width:415px){
+	div.slide-8{
+	  display:none;
+	}
+	div.slide-8M{
+	  position: fixed; 
+	  left: -80%;
+	  top:15%
+  
+	}
+  }    
+	  @media only screen and (min-width: 416px){
+		  div.slide-8M{
+			  display:none;
+		  }
+		  div.slide-8{
+			position:relative;
+			right:195px
+		      }
+		      
+		      p.slide-8{
+			background-color: black;
+			position: relative;
+			top: 150px ;
+			
+		      }
+  
+	  }
+     
 	
-      }
       
-      /* slide nine */ 
+    
+      
+      /* slide nine */
+       
       @media only screen and (max-width: 391px){
 	div.slide-9 p {
 	 font-size: 20px;
