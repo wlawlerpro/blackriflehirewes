@@ -256,21 +256,34 @@ body {
       }
 }
       /*slide five*/
-      
+      @media only screen and (max-width:415px){
       div.slide-5{
-	position:relative;
-	right:90px
+	display:none;
       }
-      
-      p.slide-5{
-	background-color: black;
-	position: relative;
-	top: 150px ;
-	
+      div.slide-5M{
+	position: fixed; 
+	left: -80%;
+	top:15%
+
       }
+}    
+	@media only screen and (min-width: 416px){
+		div.slide-5M{
+			display:none;
+		}
+
+	}
+   
       
       /*slide six */ 
-      
+       @media only screen and (max-width: 415px){
+	div.slide-6 {
+		position: fixed; 
+		left:-80%;
+		top: 15%;
+	}
+}
+   @media only screen and (min-width: 416px) {
       div.slide-6{
 	position:relative; 
 	left: 175px;
@@ -281,7 +294,7 @@ body {
 	top: 125px ;
 	
       }
-      
+}
       /*slide seven*/ 
       @media only screen and (max-width: 391px){
 	div.slide-7 p {
