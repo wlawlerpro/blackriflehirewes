@@ -178,7 +178,13 @@ body {
 	div.slide-1 {
 	 position: fixed; 
 	 left: -80%;
-	 top:15%
+	 top:15%;
+	 display:none;
+	}
+	div.slide-1m{
+		position: fixed; 
+		left: -80%;
+		top:15%;	
 	}
 }
 @media only screen and (min-width: 416px){
@@ -186,7 +192,9 @@ body {
 	 position: relative;
 	 left: 12%;
 	}
-
+        div.slide-1m{
+		display:none;
+	}
 	
 }
       /*slide two*/ 
@@ -195,8 +203,12 @@ body {
 	 position: fixed; 
 	 left:-78%;
 	 top: 10%;
-	 
-	
+	 display:none
+	}
+	div.slide-2m{
+		position: fixed; 
+		left:-68%;
+		top: 15%;
 	}
 }
       @media only screen and (min-width: 416px){ 
@@ -204,6 +216,9 @@ body {
 	position:relative;
 	left: 15%;
       }
+        div.slide-2m {
+		display: none; 
+	}
 }
       
   
@@ -212,10 +227,14 @@ body {
 	div.slide-3{
 		position: fixed; 
 		left:-78%;
-		top: 15%;}
+		top: 15%;
+	        display:none}
 
-	 p.slide-3{
-		display: none;}
+	 div.slide-3m{
+		position: fixed; 
+		left:-78%;
+		top: 15%;
+		}
 	}
 
    @media only screen and (min-width:416px){   
@@ -225,10 +244,8 @@ body {
       }
 
     
-      p.slide-3{
-	background-color: black;
-	position: relative;
-	top: 125px ;
+      div.slide-3m{
+	display: none 
 	
       }
 }
@@ -240,35 +257,45 @@ body {
 		position: fixed; 
 		left:-80%;
 		top: 15%;
+		display:none;
+	}
+	div.slide-4m{
+		position: fixed; 
+		left:-77%;
+		top: 15%;	
 	}
 }
 @media only screen and (min-width: 416px){
       div.slide-4{
 	position:relative;
-	left:150px
+	left:150px;
+	
       }
       
-      p.slide-4{
-	background-color: black;
-	position: relative;
-	top: 150px ;
+      div.slide-4m{
+	display:none
 	
       }
 }
       /*slide five*/
       @media only screen and (max-width:415px){
-      div.slide-5{
+       .slide-5{
+	
 	display:none;
       }
-      div.slide-5M{
+      div.slide-5m{
 	position: fixed; 
-	left: -80%;
+	left: -77%;
 	top:15%
 
       }
 }    
 	@media only screen and (min-width: 416px){
-		div.slide-5M{
+		div.slide-5{
+		position:relative; 
+	        left: 100px;
+		}
+		div.slide-5m{
 			display:none;
 		}
 
@@ -332,29 +359,24 @@ body {
 	div.slide-8{
 	  display:none;
 	}
-	div.slide-8M{
+	div.slide-8m{
 	  position: fixed; 
-	  right: 750px;
+	  right: 698px;
 	  top:15%
   
 	}
   }    
 	  @media only screen and (min-width: 416px){
-		  div.slide-8M{
+		  div.slide-8m{
 			  display:none;
 		  }
 		  div.slide-8{
 			position:relative;
-			right:195px
+			right:195px;
+			bottom:200px;
 		      }
 		      
-		      p.slide-8{
-			background-color: black;
-			position: relative;
-			top: 150px ;
-			
-		      }
-  
+		     
 	  }
      
 	
@@ -394,21 +416,30 @@ body {
      
 }
       /*slide ten*/
+
+      @media only screen and (max-width: 415px){
+	div.slide-10 {
+		position: fixed; 
+		left: -78%;
+		bottom:15%;	
+		display: none;
+	}
+	div.slide-10m{
+		position: fixed; 
+		left: -78%;
+		bottom:15%;
+	}
+  }
+
+      @media only screen and (min-width: 416px){
       div.slide-10 {
 	position:relative; 
-	right:280px;
-	bottom: 210px
+	left: 130px;
       }
-      p.slide-10{
-	background-color: black ; 
-	position: relative;
-	top: 132px;
-	left: 500px;
-	height: 100%;
-	width: 50%;
-       /* padding-top: 550px;*/
+}
+   
         
-      }
+      
       /*slide eleven*/
       @media only screen and (max-width: 391px){
 	.slide-11 p {
@@ -431,7 +462,7 @@ body {
 	position: fixed;
 	justify-content: center;
 	align-items: center;
-	bottom:20%;
+	bottom:50%;
 	right:1%;
 	padding: 0px 20px 0px 20px; 
 
@@ -597,24 +628,44 @@ input {
       
 
  /*back button*/
- @media only screen and (max-width: 391px){
- .previous {
+ @media only screen and (max-width: 390px){
+ .previous-m {
 	background-color: #f6b519;
 	color: black;
 	padding: 5px;
 	position: fixed;
 	top: 10% !important;
 	left: 10px
+	
+}
+.previous {
+	background-color: #f6b519;
+	color: black;
+	padding: 5px;
+	position: relatiive; 
+	left: 10%;
+	display: none;
+	
 }
  }
- @media only screen and (min-width: 392){
- .previous {
+ @media only screen and (min-width: 391px){
+ .previous-m {
 	 background-color: #f6b519;
 	 color: black;
 	 padding: 5px;
 	 position: relatiive; 
-	 left: 10%
+	 left: 0%;
+	 display:none; 
  }
+ .previous {
+	background-color: #f6b519;
+	color: black;
+	padding: 5px;
+	position: fixed ;
+	top: 1%;
+	left: 20%;
+	
+}
 }
   /* Fancy Button */
   
