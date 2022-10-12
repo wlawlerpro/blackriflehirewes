@@ -428,13 +428,18 @@ body {
 		position: fixed; 
 		left: -78%;
 		bottom:15%;
+		
 	}
   }
 
       @media only screen and (min-width: 416px){
       div.slide-10 {
 	position:relative; 
-	left: 130px;
+	left: 75px;
+	top: 40%;
+      }
+      div.slide-10m{
+	display: none; 
       }
 }
    
@@ -483,7 +488,7 @@ body {
 	  -webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
 	position: relative;
-	top:6px;
+	top:60px;
 	left:12px;
 	padding: 6px
 
@@ -657,13 +662,22 @@ input {
 	 left: 0%;
 	 display:none; 
  }
- .previous {
+ .previous-c {
 	background-color: #f6b519;
 	color: black;
 	padding: 5px;
 	position: fixed ;
 	top: 1%;
 	left: 20%;
+	
+}
+.previous-s {
+	background-color: #f6b519;
+	color: black;
+	padding: 5px;
+	position: fixed ;
+	top: 9%;
+	left: 2%;
 	
 }
 }
