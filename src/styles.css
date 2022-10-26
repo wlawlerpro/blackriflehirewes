@@ -564,13 +564,28 @@ h3.description-header {
 	margin-left:12px;
 	
 }
+@media only screen and (min-width: 416px){
 p.product-description {
 	font-family: 'Veneer Two';
 	src: url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff2') format('woff2'),
 	    url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff') format('woff');
 	color:#ffffff;
-	margin-left:20px;
-	
+	word-wrap: normal;
+	width: 50%;
+	margin-left:20px;	
+}
+}
+@media only screen and (max-width: 415px){
+	p.product-description {
+		font-family: 'Veneer Two';
+		src: url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff2') format('woff2'),
+		    url('./assets/fonts/VeneerTwo-webV3/VeneerTwo.woff') format('woff');
+		color:#ffffff;
+		word-wrap: normal;
+		width: 75%;
+		margin-left:25px;
+		font-size: 22px;	
+	}
 }
 h4.item-price {
 	color:#ffffff;
