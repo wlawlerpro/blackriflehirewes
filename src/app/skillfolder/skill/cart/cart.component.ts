@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../cart.service';
-import { Product, products } from '../../product';
+import { Product, productss } from '../../product';
 
 
 @Component({
@@ -23,7 +23,7 @@ export class CartComponent implements OnInit{
  
   
   ngOnInit(): void{
-    this.cartService.itermsObservable.subscribe((res) => {
+    this.cartService.itemsObservable1.subscribe((res) => {
       this.items = res;
     }); 
     this.cartService.totalOberservable.subscribe((res) => {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {Product, products} from '../../product'; 
+import {Product, productss} from '../../product'; 
 import { CartService } from '../../cart.service';
 @Component({
   selector: 'app-product-details',
@@ -28,7 +28,7 @@ export class ProductDetailsComponent implements OnInit {
     Number(routeParams.get('productId')); 
 
     //Find the product that correspond with the id provided in route.
-    this.product = products.find(product => product.id === productIdFromRoute); 
+    this.product = productss.find(product => product.id === productIdFromRoute); 
   }
   onBuy() {
     window.alert('Thank you for viewing my Demo');

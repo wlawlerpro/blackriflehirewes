@@ -1,14 +1,30 @@
 import{ Component} from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
-import { products} from '../../product'; 
-
+import { Product} from '../../product'; 
+import { CartService } from '../../cart.service';
 @Component({
     selector:'app-product-list', 
     templateUrl:'./product-list.component.html', 
     styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-    products = products; 
+    /*
+    products = products;
+    */
+ /*address to remote server goes here    */ 
+   products: Product[] = [];
+
+   constructor(private cartService: CartService) {}
+   ngOnInit(): void  {
+    this.getProducts(); 
+   }
+
+   getProducts(): void{
+    this.cartService.getProducts()
+    .subscribe(products => this.products = products);
+   }
+   
 
     share() {
         window.alert('The product has been shared!');

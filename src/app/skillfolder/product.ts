@@ -8,7 +8,7 @@ export interface Product {
 	description: string; 
     }
     
-    export const products = [
+    export const productss = [
 	{   id:1, 
 	    name: "Autographed picture of the Black Rifle Coffee CEO", 
 	    price: 69,
@@ -38,3 +38,4 @@ export interface Product {
 	    description: 'Do you want to know more'
 	}
     ];
+    
