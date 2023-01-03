@@ -1,16 +1,20 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Product} from './product'
-import { BehaviorSubject, Observable,of } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Product, productss, } from './product'
+import { BehaviorSubject, Observable, of, } from 'rxjs';
 
-import{ catchError, map, tap} from 'rxjs/operators';
+import{ catchError, map, shareReplay, tap} from 'rxjs/operators';
+import { ObserveOnSubscriber } from 'rxjs/internal/operators/observeOn';
 //import { AngularFirestore } from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-  private catalogURL = 'https://my-json-server.typicode.com/wlawlerpro/db/products'; 
+  private productsURL = 'https://my-json-server.typicode.com/wlawlerpro/db/products'; 
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
 constructor(
   private http: HttpClient
 ) {}
@@ -23,7 +27,6 @@ private  items : Product[] = [];
 private itemList$ = new BehaviorSubject<Product[]>(this.items); 
 public itemsObservable1 = this.itemList$.asObservable();
 
-  
 
   
   
@@ -68,12 +71,19 @@ getItems(): Observable<Product> {
     return total; 
   }
  //Product List 
+ 
  getProducts(): Observable<Product[]> {
-  return this.http.get<Product[]>(this.catalogURL)
+  return this.http.get<Product[]>(this.productsURL)
   .pipe(
     tap(), 
   );
  }
 
- 
+getProduct(id: number): Observable<Product> {
+  const url = `${this.productsURL}/${id}`; 
+  return this.http.get<Product>(url).pipe();
+}
+
+
+
 }

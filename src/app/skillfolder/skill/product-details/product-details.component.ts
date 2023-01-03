@@ -1,35 +1,51 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {Product, productss} from '../../product'; 
+import {Product, productss } from '../../product'; 
 import { CartService } from '../../cart.service';
+
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
- 
- addToCart(product: Product) {
-   this.cartService.addToCart(product);
-   window.alert('Your product has been added to the cart!'); 
- }
-  product: Product |undefined; 
-  /* .. */
+  product: Product | undefined; 
+  producturl = 'https://my-json-server.typicode.com/wlawlerpro/db/products'
+
+  
+  SKILL_ROUTE = '/skill'
   constructor(
     private route: ActivatedRoute, 
-    private cartService: CartService
+    private cartService: CartService, 
+    
     ) { }
 
-  ngOnInit()  {
-    //First get the product id from the current route.
-    const routeParams = 
-    this.route.snapshot.paramMap; 
-    const productIdFromRoute = 
-    Number(routeParams.get('productId')); 
-
-    //Find the product that correspond with the id provided in route.
-    this.product = productss.find(product => product.id === productIdFromRoute); 
+  ngOnInit(): void  {
+   this.getProduct();
+    
+  
+  /*const id = Number(this.route.snapshot.paramMap.get('id')); 
+  if (id) {
+    this.getProduct(id);
   }
+  */
+   
+
+  
+  }
+
+  getProduct(): void {
+  const id = parseInt(this.route.snapshot.paramMap.get('id')!, 10); 
+  this.cartService.getProduct(id)
+  .subscribe(product => this.product = product);
+  }
+  addToCart(product: Product) {
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!'); 
+  }
+  
+ 
+  
   onBuy() {
     window.alert('Thank you for viewing my Demo');
   }

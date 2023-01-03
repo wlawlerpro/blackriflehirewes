@@ -8,10 +8,7 @@ import { CartService } from '../../cart.service';
     templateUrl:'./product-list.component.html', 
     styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent {
-    /*
-    products = products;
-    */
+export class ProductListComponent { 
  /*address to remote server goes here    */ 
    products: Product[] = [];
 

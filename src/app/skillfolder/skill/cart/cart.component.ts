@@ -22,7 +22,8 @@ export class CartComponent implements OnInit{
   ) { }
  
   
-  ngOnInit(): void{
+  ngOnInit(): void{ 
+   
     this.cartService.itemsObservable1.subscribe((res) => {
       this.items = res;
     }); 

@@ -1,5 +1,6 @@
 
 export interface Product {
+  [x: string]: any;
 	id: number; 
 	name: string; 
 	price: number; 
@@ -8,7 +9,8 @@ export interface Product {
 	description: string; 
     }
     
-    export const productss = [
+    export const productss = 
+   [
 	{   id:1, 
 	    name: "Autographed picture of the Black Rifle Coffee CEO", 
 	    price: 69,
