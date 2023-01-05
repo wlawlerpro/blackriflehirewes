@@ -2,23 +2,22 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Product, productss, } from './product'
 import { BehaviorSubject, Observable, of, } from 'rxjs';
-
 import{ catchError, map, shareReplay, tap} from 'rxjs/operators';
-import { ObserveOnSubscriber } from 'rxjs/internal/operators/observeOn';
-//import { AngularFirestore } from '@angular/fire/firestore';
+import { MessageService } from './message.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-  private productsURL = 'https://my-json-server.typicode.com/wlawlerpro/db/products'; 
+  private productsUrl = 'https://my-json-server.typicode.com/wlawlerpro/db/products'; 
+  private productsURL2 = 'api/products'
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
 constructor(
-  private http: HttpClient
+  private http: HttpClient,
+  private messageService: MessageService,
 ) {}
-
 private total = 0; 
 private totalSubject$ = new BehaviorSubject<number>(this.total); 
 public totalOberservable = this.totalSubject$.asObservable(); 
@@ -26,42 +25,25 @@ private  items : Product[] = [];
 
 private itemList$ = new BehaviorSubject<Product[]>(this.items); 
 public itemsObservable1 = this.itemList$.asObservable();
-
-
   
-  
-
   addToCart(item: Product): void {
     this.items.push(item);
     this.itemList$.next(this.items); 
     this.total = this.calculateTotal(); 
-    this.totalSubject$.next(this.total); 
-    
-    
+    this.totalSubject$.next(this.total);   
   }
-  
   removeFromCart(index: number){
     this.items.splice(index,1)
     this.total = this.calculateTotal(); 
     this.totalSubject$.next(this.total)
-
   }
-  
   getItems() {
     return this.itemList$.asObservable(); 
   }
-/*
-getItems(): Observable<Product> {
-  return this.http.get<items>(this.catalogURL)
-
-}
-*/ 
   clearCart() {
     this.items = []; 
     return this.items;
   }
-  
-
   private calculateTotal(): number {
     let total = 0; 
     this.items.forEach(
@@ -73,17 +55,49 @@ getItems(): Observable<Product> {
  //Product List 
  
  getProducts(): Observable<Product[]> {
-  return this.http.get<Product[]>(this.productsURL)
+  return this.http.get<Product[]>(this.productsUrl)
   .pipe(
     tap(), 
   );
  }
 
+
 getProduct(id: number): Observable<Product> {
-  const url = `${this.productsURL}/${id}`; 
-  return this.http.get<Product>(url).pipe();
+  
+  const url = `${this.productsUrl}/${id} `; 
+  console.log(id)
+  return this.http.get<Product>(url).pipe(
+    tap(_ => this.log(`fetched product id=${id}`)),
+    catchError(this.handleError<Product>(`getHero id=${id}`))
+  );}
+
+   /**
+   * Handle Http operation that failed.
+   * Let the app continue.
+   * 
+   * @param operation - name of the operation that failed
+   * @param result - optional value to return as the observable result
+   */
+    private  handleError<T>(operation = 'operation', result?: T) {
+      return (error: any): Observable<T> => {
+  
+        // TODO: send the error to remote logging infrastructure
+        console.error(error); // log to console instead
+      // TODO: better job of transforming error for user consumption
+      this.log(`${operation} failed: ${error.message}`);
+
+      // Let the app keep running by returning an empty result.
+      return of(result as T);
+    };
+  }
+
+  /** Log a HeroService message with the MessageService */
+  private log(message: string) {
+    this.messageService.add(`HeroService: ${message}`);
+  }
 }
 
 
 
-}
+
+
