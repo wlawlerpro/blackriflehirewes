@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Product, productss, } from './product'
+import { Product } from './product'
 import { BehaviorSubject, Observable, of, } from 'rxjs';
 import{ catchError, map, shareReplay, tap} from 'rxjs/operators';
-import { MessageService } from './message.service';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +15,7 @@ export class CartService {
   };
 constructor(
   private http: HttpClient,
-  private messageService: MessageService,
+ 
 ) {}
 private total = 0; 
 private totalSubject$ = new BehaviorSubject<number>(this.total); 
@@ -67,7 +66,6 @@ getProduct(id: number): Observable<Product> {
   const url = `${this.productsUrl}/${id} `; 
   console.log(id)
   return this.http.get<Product>(url).pipe(
-    tap(_ => this.log(`fetched product id=${id}`)),
     catchError(this.handleError<Product>(`getHero id=${id}`))
   );}
 
@@ -83,18 +81,14 @@ getProduct(id: number): Observable<Product> {
   
         // TODO: send the error to remote logging infrastructure
         console.error(error); // log to console instead
-      // TODO: better job of transforming error for user consumption
-      this.log(`${operation} failed: ${error.message}`);
+     
 
       // Let the app keep running by returning an empty result.
       return of(result as T);
     };
   }
 
-  /** Log a HeroService message with the MessageService */
-  private log(message: string) {
-    this.messageService.add(`HeroService: ${message}`);
-  }
+ 
 }
 
 
