@@ -9,7 +9,7 @@ import { CartService } from '../../cart.service';
     styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent { 
- /*address to remote server goes here    */ 
+
    products: Product[] = [];
 
    constructor(private cartService: CartService) {}
