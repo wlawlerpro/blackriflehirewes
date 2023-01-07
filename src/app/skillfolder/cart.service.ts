@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient} from '@angular/common/http';
 import { Product } from './product'
 import { BehaviorSubject, Observable, of, } from 'rxjs';
 import{ catchError, map, shareReplay, tap} from 'rxjs/operators';
@@ -9,10 +9,8 @@ import{ catchError, map, shareReplay, tap} from 'rxjs/operators';
 })
 export class CartService {
   private productsUrl = 'https://my-json-server.typicode.com/wlawlerpro/db/products'; 
-  private productsURL2 = 'api/products'
-  httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  };
+
+
 constructor(
   private http: HttpClient,
  
@@ -59,7 +57,7 @@ public itemsObservable1 = this.itemList$.asObservable();
     tap(), 
   );
  }
-
+//Product Details
 
 getProduct(id: number): Observable<Product> {
   
