@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-//import { ActivatedRouteData } from '@angular/router';
-import { OutletContext, RouterOutlet, Router } from '@angular/router';
+import {  Router } from '@angular/router';
 @Component({
   selector: 'app-root',
- //animation: [ ''],
+
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -16,12 +15,6 @@ export class AppComponent implements OnInit {
 
   
  
-/*
-prepareRoute(outlet: RouterOutlet) {
-  return outlet && OutletContext.activatedRouteData && OutletContext.activatedRouteData['animation'];
-
-}
-*/
 constructor(public router: Router ) {
 
 }

@@ -45,5 +45,9 @@ a.title{
       }
 .menu-button a.active {
 	background-color: black;
-      }
+      } 
+.icon-bar {
+	position: relative;
+	right: 2px; 
+}
 
