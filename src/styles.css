@@ -322,7 +322,7 @@ body {
        @media only screen and (max-width: 415px){
 	div.slide-6 {
 		position: fixed; 
-		left:-70%;
+		left:-75%;
 		top: 15%;
 	}
 }
