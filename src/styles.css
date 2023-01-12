@@ -341,7 +341,7 @@ body {
       /*slide seven*/ 
       @media only screen and (max-width: 391px){
 	div.slide-7 p {
-	 font-size: 20px;
+	 font-size: 40px;
 	 width:100%;
 	 max-width: 388px;
 	 word-wrap: break-word;
