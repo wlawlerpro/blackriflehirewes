@@ -194,7 +194,7 @@ body {
 	}
 	div.slide-1m{
 		position: fixed; 
-		left: -80%;
+		left: -75%;
 		top:15%;
 		z-index: -1;	
 	}
@@ -219,7 +219,7 @@ body {
 	}
 	div.slide-2m{
 		position: fixed; 
-		left:-58%;
+		left:-63%;
 		top: 15%;
 		z-index: -1;
 	}
