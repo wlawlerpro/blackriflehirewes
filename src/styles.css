@@ -89,7 +89,8 @@ body {
 	
       }
       
-    
+  
+  
       
       p {
 	background-color: transparent;
@@ -129,7 +130,17 @@ body {
 	position: relative;
 	top: 70%;
       }
- }    
+ } 
+ @media only screen and (max-width: 415px){
+	.previous-c{
+	display: none;
+	}
+	ngb-carousel-basic {
+		position: relative;
+		top: 300px
+	}
+   }    
+   
       .carousel-item {
 	     position: relative;
 	     top: 70%;
@@ -184,7 +195,8 @@ body {
 	div.slide-1m{
 		position: fixed; 
 		left: -80%;
-		top:15%;	
+		top:15%;
+		z-index: -1;	
 	}
 }
 @media only screen and (min-width: 416px){
@@ -209,6 +221,7 @@ body {
 		position: fixed; 
 		left:-68%;
 		top: 15%;
+		z-index: -1;
 	}
 }
       @media only screen and (min-width: 416px){ 
@@ -234,6 +247,7 @@ body {
 		position: fixed; 
 		left:-78%;
 		top: 15%;
+		z-index: -1;
 		}
 	}
 
@@ -262,7 +276,8 @@ body {
 	div.slide-4m{
 		position: fixed; 
 		left:-77%;
-		top: 15%;	
+		top: 15%;
+		z-index: -1;	
 	}
 }
 @media only screen and (min-width: 416px){
@@ -286,7 +301,8 @@ body {
       div.slide-5m{
 	position: fixed; 
 	left: -77%;
-	top:15%
+	top:15%;
+	z-index: -1;
 
       }
 }    
