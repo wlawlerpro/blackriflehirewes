@@ -88,7 +88,7 @@
   
     
   /*Mobile Settings */
-    @media only screen and (max-width: 390px){
+    @media only screen and (max-width: 415px){
 	.container{
 		display:none
 	}
