@@ -120,6 +120,10 @@
 		align-content:center; 
 		padding-top: 50%;
 	}
+	.third-row {
+		position: relative;
+		right:50px 
+	}
     }
     @media only screen and (min-width: 391px){
 	.mobileContainer {
