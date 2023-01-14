@@ -120,9 +120,9 @@
 		align-content:center; 
 		padding-top: 50%;
 	}
-	.third-row {
+	tr.third-row {
 		position: relative;
-		right:50px 
+		right:50% 
 	}
     }
     @media only screen and (min-width: 391px){
