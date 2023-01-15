@@ -120,12 +120,13 @@
 		align-content:center; 
 		padding-top: 50%;
 	}
-	tr.third-row {
+	.remove {
 		position: relative;
-		right:50% 
+		left: 5%
 	}
+	
     }
-    @media only screen and (min-width: 391px){
+    @media only screen and (min-width: 416px){
 	.mobileContainer {
 		display: none 
 		
