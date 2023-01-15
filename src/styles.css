@@ -401,7 +401,7 @@ body {
       
       /* slide nine */
        
-      @media only screen and (max-width: 391px){
+      @media only screen and (max-width: 415px){
 	div.slide-9 p {
 	 font-size: 20px;
 	 width:100%;
@@ -417,7 +417,7 @@ body {
 
       } 
   
-    @media only screen and (min-width: 392px){
+    @media only screen and (min-width: 416px){
       div.slide-9 p{
 	font-size: 3vw;
 	align-content: center;
