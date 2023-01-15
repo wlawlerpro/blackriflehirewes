@@ -111,7 +111,7 @@ body {
 	position: absolute;
 	top:90%;
       }
-     @media only screen and (max-width:391px){
+     @media only screen and (max-width:415px){
       .carousel-indicators {
         position:absolute ;
 	bottom: -500px;
@@ -120,7 +120,7 @@ body {
       }    
    
 }
-      @media only screen and (min-width:392px){
+      @media only screen and (min-width:416px){
       .carousel-indicators {
 		background-color: transparent;
 	      }
@@ -354,10 +354,10 @@ body {
 	}
 
       }
-      @media only screen and (min-width: 392px){
+      @media only screen and (min-width: 416px){
       .slide-7 p{
 	
-	font-size: 3vw;
+	font-size: 2vw;
 	align-content: center;
 	position: fixed;
 	justify-content: center;
@@ -419,7 +419,7 @@ body {
   
     @media only screen and (min-width: 416px){
       div.slide-9 p{
-	font-size: 3vw;
+	font-size: 2vw;
 	align-content: center;
 	position: fixed;
 	justify-content: center;
@@ -462,7 +462,7 @@ body {
         
       
       /*slide eleven*/
-      @media only screen and (max-width: 391px){
+      @media only screen and (max-width: 415px){
 	.slide-11 p {
 	 font-size: 20px;
 	 width:100%;
@@ -476,9 +476,9 @@ body {
 	 justify-content: center;
 	}
 	}
-      @media only screen and (min-width: 392px) {
+      @media only screen and (min-width: 416px) {
       .slide-11 p{
-	font-size: 3vw;
+	font-size: 2vw;
 	align-content: center;
 	position: fixed;
 	justify-content: center;
