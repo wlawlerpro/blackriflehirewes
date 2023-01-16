@@ -301,7 +301,7 @@ body {
 	@media only screen and (min-width: 416px){
 		div.slide-5{
 		position:relative; 
-	        left: 100px;
+	        left: 12%;
 		}
 		div.slide-5m{
 			display:none;
@@ -321,7 +321,7 @@ body {
    @media only screen and (min-width: 416px) {
       div.slide-6{
 	position:relative; 
-	left: 175px;
+	left: 17%;
       }
       p.slide-6{
 	background-color: black;
