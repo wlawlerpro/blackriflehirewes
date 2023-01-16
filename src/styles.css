@@ -212,9 +212,6 @@ body {
       /*slide two*/ 
       @media only screen and (max-width: 415px){
 	div.slide-2 {
-	 position: fixed; 
-	 left:-78%;
-	 top: 10%;
 	 display:none
 	}
 	div.slide-2m{
@@ -227,7 +224,7 @@ body {
       @media only screen and (min-width: 416px){ 
 	div.slide-2{
 	position:relative;
-	left: 15%;
+	left: 17%;
       }
         div.slide-2m {
 		display: none; 
@@ -238,9 +235,7 @@ body {
       /*slide three*/
       @media only screen and (max-width: 415px){
 	div.slide-3{
-		position: fixed; 
-		left:-76%;
-		top: 15%;
+		
 	        display:none}
 
 	 div.slide-3m{
@@ -254,7 +249,7 @@ body {
    @media only screen and (min-width:416px){   
 	  div.slide-3 {
 	position: relative; 
-	left:150px 
+	left:15%
       }
 
     
